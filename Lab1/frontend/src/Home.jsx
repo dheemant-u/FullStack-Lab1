@@ -46,6 +46,15 @@ function Home() {
           </div>
         </Link>
 
+        {/* ADD MATH GAME CARD */}
+        <Link to="/math-game" style={{ textDecoration: "none" }}>
+          <div className="category-card" style={{ backgroundColor: '#e6e6fa' }}>
+            <h1 style={{ fontSize: '50px' }}>🔢</h1>
+            <h2>Math Game</h2>
+          </div>
+        </Link>
+
+
       </div>
     </div>
   );

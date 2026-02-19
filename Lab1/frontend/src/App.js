@@ -5,6 +5,7 @@ import Category from "./Category";
 import FoodDetails from "./FoodDetails";
 import Quiz from "./Quiz";
 import AddFood from "./AddFood";
+import MathGame from "./MathGame";
 import Footer from "./Footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/food/:name" element={<FoodDetails />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/add-food" element={<AddFood />} />
+          <Route path="/math-game" element={<MathGame />} />
         </Routes>
       </div>
       <Footer />

@@ -1,0 +1,142 @@
+.math-game-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* AliceBlue - calming background */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Playful font */
+  min-height: 100vh;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  border-radius: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mode-btn {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #87ceeb;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mode-btn:hover {
+  transform: scale(1.1);
+  background-color: #00bfff;
+}
+
+.game-board {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.score-board {
+  font-size: 1.5rem;
+  color: #ff8c00;
+  margin-bottom: 20px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.game-item {
+  font-size: 4rem;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-btn:hover {
+  background-color: #98fb98;
+  border-color: #2e8b57;
+}
+
+.math-problem {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  height: 40px; /* Prevent layout shift */
+  color: #dc143c;
+}
+
+.feedback.success {
+  color: #32cd32;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #dda0dd;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.selection-box {
+  position: absolute;
+  border: 2px dashed #007bff;
+  background-color: rgba(0, 123, 255, 0.2);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.game-item.selected {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px gold);
+  transition: transform 0.2s, filter 0.2s;
+}
